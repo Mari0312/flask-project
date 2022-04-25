@@ -1,4 +1,3 @@
-import jinja2
 from flask import jsonify, request, Blueprint
 from jinja2 import Environment, PackageLoader, select_autoescape
 

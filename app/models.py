@@ -15,7 +15,8 @@ class User(Base):
 
     def __init__(self, *args, password, birthday, **kwargs):
         date_birthday = datetime.date.fromisoformat(birthday)
-        super().__init__(hashed_password=self.generate_hash(password), birthday=date_birthday, *args, **kwargs)
+        super().__init__(hashed_password=self.generate_hash(password),
+                         birthday=date_birthday, *args, **kwargs)
 
     @classmethod
     def find_by_name(cls, name):

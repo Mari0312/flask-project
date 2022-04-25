@@ -3,6 +3,7 @@ import os
 import pytest
 from alembic.command import upgrade
 from alembic.config import Config
+
 from database.database import SQLALCHEMY_DATABASE_URI, session
 
 
