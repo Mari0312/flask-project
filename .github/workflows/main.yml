@@ -26,7 +26,8 @@ jobs:
        flake8 app
    - name: Tests
      run:
-       pytest tests
+       cd app
+       python -m pytest ../tests
  build:
    runs-on: ubuntu-latest
    steps:
