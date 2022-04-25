@@ -1,1 +1,1 @@
-web: gunicorn --bind :8000 --workers 3 --threads 2 app.run:app
+web: gunicorn --bind :8000 --chdir app --workers 3 --threads 2 run:app
