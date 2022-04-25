@@ -22,6 +22,7 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(length=50), nullable=False),
     sa.Column('birthday', sa.DateTime(), nullable=False),
+    sa.Column('hashed_password', sa.String(length=300), nullable=False),
     sa.PrimaryKeyConstraint('id')
     )
 
